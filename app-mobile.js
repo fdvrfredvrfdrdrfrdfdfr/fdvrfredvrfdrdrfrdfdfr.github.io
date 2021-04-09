@@ -33,6 +33,7 @@ new Vue({
             .send('VKWebAppStorageGet', {"keys": ["phone"]})
             .then(data => {
                 // Handling received data
+                console.log(data['keys'][0]['value'])
                 if (data['keys'][0]['value']) { 
                     this.login = data['keys'][0]['value'] 
                 }
